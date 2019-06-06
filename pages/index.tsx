@@ -6,7 +6,8 @@ import { Examples } from "../components/Examples";
 import { BlocContext, BlocContextValue } from "../context/BlocContext";
 
 const Index: NextComponentType = () => {
-  // `as BlocContextValue` is used to reverse the effects of Partial<BlocContextValue>
+  // `as BlocContextValue` is used to reverse the effects of
+  // Partial<BlocContextValue>.
   const { clockBloc } = useContext(BlocContext) as BlocContextValue;
   const state = useBlocState(clockBloc);
 
