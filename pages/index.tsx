@@ -20,6 +20,7 @@ const Index: NextComponentType = () => {
   return (
     <div>
       <Examples ts={state.ts} light={state.light} />
+      <br />
       <Link href="/about">
         <a>About page</a>
       </Link>
@@ -33,7 +34,6 @@ Index.getInitialProps = async ({ clockBloc, req }) => {
   // `serverInit` event will make the background dark, which will be replaced
   // with a light background when the client kicks in.
   if (isServer) {
-    console.log("serverInit");
     await clockBloc.dispatch("serverInit");
   } else {
     await clockBloc.dispatch("init");

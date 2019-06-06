@@ -671,19 +671,19 @@
     to-fast-properties "^2.0.0"
 
 "@bloc-js/bloc@^1.5.0":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@bloc-js/bloc/-/bloc-1.5.4.tgz#eac455740cfc128c0a51bac60573119839b3bc01"
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/@bloc-js/bloc/-/bloc-1.5.9.tgz#71eb421435f39e6f0c1eba8d89f7b83d1713d0a4"
   dependencies:
     fast-equals "^2.0.0"
     rxjs "^6.5.2"
 
 "@bloc-js/nextjs-bloc@^1.0.3":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@bloc-js/nextjs-bloc/-/nextjs-bloc-1.0.7.tgz#cf357768907323b1ff7b62e616b1a8bfdeade23c"
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@bloc-js/nextjs-bloc/-/nextjs-bloc-1.0.12.tgz#41a3cff5c0816ed8ba76b1eb2540fe804d54db04"
 
 "@bloc-js/react-bloc@^1.2.6":
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/@bloc-js/react-bloc/-/react-bloc-1.2.11.tgz#263b4af5b0da5765d23ad37c84d0ef6dc289fcab"
+  version "1.2.16"
+  resolved "https://registry.yarnpkg.com/@bloc-js/react-bloc/-/react-bloc-1.2.16.tgz#4cf067af3146ca8ba65cf94878bfac5bb9d31205"
 
 "@types/anymatch@*":
   version "1.3.1"
