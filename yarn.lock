@@ -671,19 +671,19 @@
     to-fast-properties "^2.0.0"
 
 "@bloc-js/bloc@^1.5.0":
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/@bloc-js/bloc/-/bloc-1.5.9.tgz#71eb421435f39e6f0c1eba8d89f7b83d1713d0a4"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@bloc-js/bloc/-/bloc-1.6.0.tgz#9c066789079dd33654a4ccc65542a18a89396562"
   dependencies:
     fast-equals "^2.0.0"
     rxjs "^6.5.2"
 
 "@bloc-js/nextjs-bloc@^1.0.3":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@bloc-js/nextjs-bloc/-/nextjs-bloc-1.0.12.tgz#41a3cff5c0816ed8ba76b1eb2540fe804d54db04"
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@bloc-js/nextjs-bloc/-/nextjs-bloc-1.0.14.tgz#d3cdfeb9152509c2cdf93e9b100387d332f8b8ac"
 
 "@bloc-js/react-bloc@^1.2.6":
-  version "1.2.16"
-  resolved "https://registry.yarnpkg.com/@bloc-js/react-bloc/-/react-bloc-1.2.16.tgz#4cf067af3146ca8ba65cf94878bfac5bb9d31205"
+  version "1.2.21"
+  resolved "https://registry.yarnpkg.com/@bloc-js/react-bloc/-/react-bloc-1.2.21.tgz#ae934014854aeefecdd25d9d534a444ac68e8611"
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -714,8 +714,8 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "12.0.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.5.tgz#ac14404c33d1a789973c45379a67f7f7e58a01b9"
+  version "12.0.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.7.tgz#4f2563bad652b2acb1722d7e7aae2b0ff62d192c"
 
 "@types/prop-types@*":
   version "15.7.1"
@@ -1260,12 +1260,12 @@ browserify-zlib@^0.2.0:
     pako "~1.0.5"
 
 browserslist@^4.1.0:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.6.1.tgz#ee5059b1aec18cbec9d055d6cb5e24ae50343a9b"
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.6.2.tgz#574c665950915c2ac73a4594b8537a9eba26203f"
   dependencies:
-    caniuse-lite "^1.0.30000971"
-    electron-to-chromium "^1.3.137"
-    node-releases "^1.1.21"
+    caniuse-lite "^1.0.30000974"
+    electron-to-chromium "^1.3.150"
+    node-releases "^1.1.23"
 
 buffer-from@^1.0.0:
   version "1.1.1"
@@ -1324,9 +1324,9 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
-caniuse-lite@^1.0.30000971:
-  version "1.0.30000973"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000973.tgz#2f8e8e54f9e6c5b7a631c9e69bfa1093d8cfd360"
+caniuse-lite@^1.0.30000974:
+  version "1.0.30000974"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000974.tgz#b7afe14ee004e97ce6dc73e3f878290a12928ad8"
 
 case-sensitive-paths-webpack-plugin@2.1.2:
   version "2.1.2"
@@ -1689,9 +1689,9 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.3.137:
-  version "1.3.148"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.148.tgz#5796c0d9eb0358d397163413b90bf376c5d8bf08"
+electron-to-chromium@^1.3.150:
+  version "1.3.152"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.152.tgz#8f1c08e101d58fe2ef72655481bbf8c83f9450fa"
 
 elliptic@^6.0.0:
   version "6.4.1"
@@ -2606,8 +2606,8 @@ mime@1.4.1:
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
 
 mime@^2.3.1:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.3.tgz#229687331e86f68924e6cb59e1cdd937f18275fe"
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.4.tgz#bd7b91135fc6b01cde3e9bae33d659b63d8857e5"
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"
@@ -2695,8 +2695,8 @@ ms@2.0.0:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
 ms@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
 
 nan@^2.12.1:
   version "2.14.0"
@@ -2856,7 +2856,7 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node-releases@^1.1.21:
+node-releases@^1.1.23:
   version "1.1.23"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.23.tgz#de7409f72de044a2fa59c097f436ba89c39997f0"
   dependencies:
