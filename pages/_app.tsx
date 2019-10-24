@@ -1,5 +1,5 @@
 import { withBlocs } from "@bloc-js/nextjs-bloc";
-import App, { Container } from "next/app";
+import App from "next/app";
 import React from "react";
 import { ClockBloc } from "../bloc/ClockBloc";
 import { CounterBloc } from "../bloc/CounterBloc";
@@ -14,9 +14,7 @@ class BlocTestApp extends App<BlocTestAppProps> {
     const { Component, pageProps, blocs } = this.props;
     return (
       <BlocContext.Provider value={blocs}>
-        <Container>
-          <Component {...pageProps} />
-        </Container>
+        <Component {...pageProps} />
       </BlocContext.Provider>
     );
   }
