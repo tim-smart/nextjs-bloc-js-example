@@ -13,7 +13,7 @@ const Index: NextComponentType = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      clockBloc.dispatch("tick");
+      clockBloc.tick();
     }, 1000);
     return () => clearInterval(timer);
   });
@@ -35,9 +35,9 @@ Index.getInitialProps = async ({ clockBloc, req }) => {
   // `serverInit` event will make the background dark, which will be replaced
   // with a light background when the client kicks in.
   if (isServer) {
-    await clockBloc.dispatch("serverInit");
+    await clockBloc.serverInit();
   } else {
-    await clockBloc.dispatch("init");
+    await clockBloc.init();
   }
 
   return {};

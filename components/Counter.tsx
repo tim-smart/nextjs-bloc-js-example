@@ -6,9 +6,9 @@ export const Counter: FC = () => {
   const { counterBloc } = useContext(BlocContext) as BlocContextValue;
   const count = useBlocState(counterBloc);
 
-  const increment = () => counterBloc.dispatch("increment");
-  const decrement = () => counterBloc.dispatch("decrement");
-  const reset = () => counterBloc.dispatch("reset");
+  const increment = () => counterBloc.increment();
+  const decrement = () => counterBloc.decrement();
+  const reset = () => counterBloc.reset();
 
   return (
     <div>

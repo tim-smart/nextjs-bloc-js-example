@@ -20,10 +20,10 @@ class BlocTestApp extends App<BlocTestAppProps> {
   }
 }
 
-export default withBlocs<BlocContextValue>(
-  initialState => ({
+export default withBlocs<BlocContextValue>(initialState => {
+  console.log("INITIAL STATE", initialState);
+  return {
     clockBloc: new ClockBloc(initialState.clockBloc),
     counterBloc: new CounterBloc(initialState.counterBloc)
-  }),
-  BlocTestApp
-);
+  };
+}, BlocTestApp);
