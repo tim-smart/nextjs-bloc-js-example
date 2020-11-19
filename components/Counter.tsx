@@ -1,14 +1,14 @@
 import { useBlocState } from "@bloc-js/react-bloc";
-import React, { FC, useContext } from "react";
-import { BlocContext, BlocContextValue } from "../context/BlocContext";
+import React, { FC } from "react";
+import * as C from "../bloc/CounterBloc";
 
 export const Counter: FC = () => {
-  const { counterBloc } = useContext(BlocContext) as BlocContextValue;
-  const count = useBlocState(counterBloc);
+  const bloc = C.useCounterBloc();
+  const count = useBlocState(bloc);
 
-  const increment = () => counterBloc.increment();
-  const decrement = () => counterBloc.decrement();
-  const reset = () => counterBloc.reset();
+  const decrement = () => bloc.next(C.decrement);
+  const increment = () => bloc.next(C.increment);
+  const reset = () => bloc.next(C.reset);
 
   return (
     <div>

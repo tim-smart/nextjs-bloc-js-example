@@ -8,20 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
-    "@bloc-js/bloc": "^2.0.0",
-    "@bloc-js/nextjs-bloc": "^2.0.1",
-    "@bloc-js/react-bloc": "^2.0.0",
-    "next": "^9.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "@bloc-js/bloc": "^3.1",
+    "@bloc-js/nextjs-bloc": "^3.1.2",
+    "@bloc-js/react-bloc": "^3.2",
+    "next": "^10.0.0",
+    "react": "^17.0",
+    "react-dom": "^17.0",
     "rxjs": "^6.5.3"
   },
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@types/node": "^12.11.6",
-    "@types/react": "^16.8.19",
-    "@types/react-dom": "^16.8.4",
+    "@types/react": "^16.9",
+    "@types/react-dom": "^16.9",
     "@types/styled-jsx": "^2.2.8",
     "tslint": "^5.17.0",
     "tslint-config-prettier": "^1.18.0",

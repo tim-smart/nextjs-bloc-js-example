@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default () => (
+const About = () => (
   <>
     <p>Simple about page here.</p>
     <p>Press the back button to see what a client rendered page looks like.</p>
@@ -9,3 +9,5 @@ export default () => (
     </Link>
   </>
 );
+
+export default About;
