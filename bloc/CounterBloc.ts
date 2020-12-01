@@ -1,15 +1,10 @@
 import { Bloc, BlocAction } from "@bloc-js/bloc";
-import { blocGetter, useBloc, useBlocState } from "@bloc-js/react-bloc";
+import { createHooks } from "@bloc-js/react-bloc";
 
-// This function can be used in getInitialProps to init / retrieve a bloc.
-export const getCounterBloc = blocGetter<number>(
+export const { getBloc, useBloc, useState } = createHooks<number>(
   "counter",
-  (initialState) => new CounterBloc(initialState),
+  (initialState) => new CounterBloc(initialState)
 );
-
-// These hooks can be used in our components.
-export const useCounterBloc = () => useBloc<number>(getCounterBloc);
-export const useCounterBlocState = () => useBlocState(useCounterBloc());
 
 // Define the bloc actions
 type Action = BlocAction<number>;

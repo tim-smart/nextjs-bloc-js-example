@@ -1,10 +1,9 @@
-import { useBlocState } from "@bloc-js/react-bloc";
 import React, { FC } from "react";
 import * as C from "../bloc/CounterBloc";
 
 export const Counter: FC = () => {
-  const bloc = C.useCounterBloc();
-  const count = useBlocState(bloc);
+  const bloc = C.useBloc();
+  const count = C.useState();
 
   const decrement = () => bloc.next(C.decrement);
   const increment = () => bloc.next(C.increment);

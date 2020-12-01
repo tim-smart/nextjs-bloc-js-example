@@ -1,15 +1,10 @@
 import { Bloc, BlocAction } from "@bloc-js/bloc";
-import { blocGetter, useBloc, useBlocState } from "@bloc-js/react-bloc";
+import { createHooks } from "@bloc-js/react-bloc";
 
-// This function can be used in getInitialProps to init / retrieve a ClockBloc
-export const getClockBloc = blocGetter<ClockState>(
+export const { getBloc, useBloc, useState } = createHooks<ClockState>(
   "clock",
-  (initialState) => new ClockBloc(initialState),
+  (initialState) => new ClockBloc(initialState)
 );
-
-// These hooks make using the bloc in components easier
-export const useClockBloc = () => useBloc(getClockBloc);
-export const useClockBlocState = () => useBlocState(useClockBloc());
 
 // Define what the state looks like
 export interface ClockState {
