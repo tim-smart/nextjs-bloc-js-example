@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@bloc-js/bloc": "^3.1",
-    "@bloc-js/nextjs-bloc": "^3.1.2",
+    "@bloc-js/nextjs-bloc": "^3.2.1",
     "@bloc-js/react-bloc": "^3.2",
     "next": "^10.0.0",
     "react": "^17.0",

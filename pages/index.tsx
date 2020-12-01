@@ -1,13 +1,11 @@
-import "@bloc-js/nextjs-bloc";
+import { initializeRegistry } from "@bloc-js/nextjs-bloc";
 import { NextPage } from "next";
 import Link from "next/link";
 import React, { useEffect } from "react";
-import * as Clock  from "../bloc/ClockBloc";
+import * as Clock from "../bloc/ClockBloc";
 import { Examples } from "../components/Examples";
 
 const Index: NextPage = () => {
-  // `as BlocContextValue` is used to reverse the effects of
-  // Partial<BlocContextValue>.
   const clockBloc = Clock.useBloc();
   const state = Clock.useState();
 
@@ -16,7 +14,7 @@ const Index: NextPage = () => {
       clockBloc.next(Clock.tick);
     }, 1000);
     return () => clearInterval(timer);
-  });
+  }, [clockBloc]);
 
   return (
     <div>
@@ -29,15 +27,12 @@ const Index: NextPage = () => {
   );
 };
 
-Index.getInitialProps = async ({ blocRegistry, req }) => {
-  const isServer = !!req;
-  const bloc = Clock.getBloc(blocRegistry);
-
+export async function getServerSideProps() {
+  const r = initializeRegistry();
   // `serverInit` event will make the background dark, which will be replaced
   // with a light background when the client kicks in.
-  await bloc.next(isServer ? Clock.serverInit : Clock.tick);
-
-  return {};
-};
+  await Clock.getBloc(r).next(Clock.serverInit);
+  return { props: { initialBlocState: r.getState() } };
+}
 
 export default Index;

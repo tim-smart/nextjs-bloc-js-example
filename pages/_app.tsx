@@ -1,11 +1,16 @@
-import { wrapper } from "@bloc-js/nextjs-bloc";
-import App, { AppProps } from "next/app";
+import { useRegistry } from "@bloc-js/nextjs-bloc";
+import { BlocRoot } from "@bloc-js/react-bloc";
+import { AppProps } from "next/app";
 import React from "react";
 
-const BlocExampleApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-);
+const BlocExampleApp = ({ Component, pageProps }: AppProps) => {
+  const r = useRegistry(pageProps.initialBlocState);
 
-BlocExampleApp.getInitialProps = App.getInitialProps;
+  return (
+    <BlocRoot registry={r}>
+      <Component {...pageProps} />
+    </BlocRoot>
+  );
+};
 
-export default wrapper(BlocExampleApp);
+export default BlocExampleApp;

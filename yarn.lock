@@ -117,10 +117,10 @@
   dependencies:
     fast-deep-equal "^3.1.3"
 
-"@bloc-js/nextjs-bloc@^3.1.2":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@bloc-js/nextjs-bloc/-/nextjs-bloc-3.1.4.tgz#fd1fa6261a3166da768d048b4359cd1b93b585bd"
-  integrity sha512-B2+1r9Uf4vbhArRy9+uwcKMK004Bzdh0QXc6FbBP0x94Sfq4ZT9zwrWHl6I1M1ivlXomBqM0cgCw4I5XbUBmQA==
+"@bloc-js/nextjs-bloc@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@bloc-js/nextjs-bloc/-/nextjs-bloc-3.2.1.tgz#39d09cf84d882a0e414773b09a30a393ceee9765"
+  integrity sha512-59iCV0DJoQODDBC0pYqXEb9qwKMScyawv5T7idZJSOgSJg/9YvT8k+4JUoB2Za7vU40jSKF6IKAlHTi3W5mmMg==
 
 "@bloc-js/react-bloc@^3.2":
   version "3.2.2"
