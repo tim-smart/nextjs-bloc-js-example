@@ -11,7 +11,7 @@
     "@bloc-js/bloc": "^3.1",
     "@bloc-js/nextjs-bloc": "^3.2.1",
     "@bloc-js/react-bloc": "^3.2",
-    "next": "^10.0.0",
+    "next": "^11.1.1",
     "react": "^17.0",
     "react-dom": "^17.0",
     "rxjs": "^6.5.3"
